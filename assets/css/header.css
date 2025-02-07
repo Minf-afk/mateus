@@ -1,6 +1,6 @@
-
 .profile-container {
   display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
   justify-content: center;
   align-items: center;
   margin: 2rem;
@@ -10,20 +10,24 @@
   width: 150px;
   height: 180px;
   border-radius: 80%;
+  margin-bottom: 1rem; /* Adiciona margem inferior para espaçamento */
 }
+
 .title {
-  font-size:x-large;
+  font-size: x-large;
   text-align: center;
   margin: 0.5rem;
 }
+
 .information {
   display: list-item;
   list-style: none;
-  text-align:start;
+  text-align: start;
   align-content: center;
   font-size: smaller;
   margin-left: 1rem;
 }
+
 .information p::before {
   content: "";
   display: inline-block;
@@ -31,16 +35,21 @@
   height: 20px;
   background-size: cover;
   vertical-align: middle;
-  margin-right: 0.5rem  ;
-  }
+  margin-right: 0.5rem;
+}
+
 p.ciencias::before {
-    background-image: url(../icons/ciencias.png);
+  background-image: url(../icons/ciencias.png);
 }
-p.email::before{
-    background-image: url(../icons/email.png);
+
+p.email::before {
+  background-image: url(../icons/email.png);
 }
-p.mapa::before{
-    background-image: url(../icons/mapa.png);
-}p.telefone::before{
-    background-image: url(../icons/telefone.png);
+
+p.mapa::before {
+  background-image: url(../icons/mapa.png);
+}
+
+p.telefone::before {
+  background-image: url(../icons/telefone.png);
 }
