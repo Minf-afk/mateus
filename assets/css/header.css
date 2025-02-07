@@ -12,12 +12,12 @@
 }
 
 .profile-photo {
-  width: 160px;
+  width: 150px;
   height: 180px;
   border-radius: 80%;
 }
 .title {
-  font-size:x-large;
+  font-size:large;
   text-align: center;
   margin: 0.5rem;
 }
@@ -33,20 +33,15 @@
   width: 20px;
   height: 20px;
   background-size: cover;
+  }
+p.ciencias::before {
+    background-image: url(../icons/ciencias.png);
 }
-
-.information .ciencias p::before {
-  background-image: url("../icons/ciencias.png");
+p.email::before{
+    background-image: url(../icons/email.png);
 }
-
-.information .email p::before {
-  background-image: url("../icons/email.png");
-}
-
-.information .mapa p::before {
-  background-image: url("../icons/mapa.png");
-}
-
-.information .telefone p::before {
-  background-image: url("../icons/telefone.png");
+p.mapa::before{
+    background-image: url(../icons/mapa.png);
+}p.telefone::before{
+    background-image: url(../icons/telefone.png);
 }
