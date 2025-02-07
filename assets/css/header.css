@@ -23,9 +23,11 @@
 }
 .information {
   display: list-item;
-  text-align: center;
+  list-style: none;
+  text-align:start;
   align-content: center;
   font-size: smaller;
+  margin-left: 1rem;
 }
 .information p::before {
   content: "";
