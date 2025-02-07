@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  background-color: #2F4F4F;
+  color: #fff;
+  font-family:"Ubuntu", serif;
+}
+.ubuntu-light {
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+  }

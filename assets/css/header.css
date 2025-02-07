@@ -1,0 +1,34 @@
+.main {
+  border: 0.25rem solid #000;
+  border-radius: 0.75rem;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 180px;
+  border-radius: 80%;
+}
+.title {
+  font-size: medium;
+  text-align: center;
+}
+.information {
+  display: list-item;
+  text-align: center;
+  align-content: center;
+}
+.information p::before {
+  content: "";
+  background-image: url("../icons/ciencias.png");
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
