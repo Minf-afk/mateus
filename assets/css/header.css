@@ -52,4 +52,32 @@ p.mapa::before {
 
 p.telefone::before {
   background-image: url(../icons/telefone.png);
+}@media only screen and (min-width: 768px) {
+  div.profile-container {
+    display: grid;
+    grid-template-areas:
+      "photo title"
+      "photo information";
+    grid-template-columns: auto 1fr;
+    grid-gap: 1rem;
+  }
+  img.profile-photo {
+    grid-area: photo;
+    margin-bottom: 0;
+    width: 300px;
+    height: 280px;
+    align-content: center;
+    margin-top: 1rem;
+  }
+  h1.title {
+    grid-area: title;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: xx-large;
+  }
+  div.information {
+    text-align:center;
+    grid-area: information;
+    margin-left: 0;
+  }
 }
