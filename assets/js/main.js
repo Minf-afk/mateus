@@ -1,4 +1,3 @@
-
 function updateProfileInfo(profileData) {
     const photo = document.getElementById('profile.photo')
     photo.src = profileData.photo
@@ -62,12 +61,21 @@ function updateProfessionalExperience(profileData) {
     }).join('')
 }
 
+
 (async () => {
-    const profileData = await fetchProfileData()
-    updateProfileInfo(profileData)
-    updateSoftSkills(profileData)
-    updateHardSkills(profileData)
-    updateLanguages(profileData)
-    updatePortfolio(profileData)
-    updateProfessionalExperience(profileData)
-})()
+    try {
+      const response = await fetch('data/profile.json');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const profileData = await response.json();
+      updateProfileInfo(profileData);
+      updateSoftSkills(profileData);
+      updateHardSkills(profileData);
+      updateLanguages(profileData);
+      updatePortfolio(profileData);
+      updateProfessionalExperience(profileData);
+    } catch (error) {
+      console.error('Erro ao carregar o JSON:', error);
+    }
+  })();
