@@ -1,0 +1,63 @@
+{
+  "name": "Renan J Paula",
+  "photo": "https://avatars.githubusercontent.com/u/3266640?v=4",
+  "job": "Tech Lead no S3 Bank",
+  "location": "São Paulo - SP",
+  "phone": "(16) 98159-7656",
+  "email": "renanjohannsen@gmail.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "Nodejs",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+      },
+      {
+        "name": "Angular",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+      },
+      {
+        "name": "React",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+      },
+      {
+        "name": "Mongodb",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
+      },
+      {
+        "name": "Postgresql",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+      }
+    ],
+    "softSkills": [
+      "Empatia",
+      "Liderança",
+      "Trabalho em equipe",
+      "Flexibilidade",
+      "Organização"
+    ]
+  },
+  "languages": [
+    "Português BR",
+    "Inglês (intermediário)",
+    "Espanhol (intermediário)"
+  ],
+  "portfolio": [
+    {
+      "name": "Site de Roupas | Femininas",
+      "url": "https://github.com/Minf-afk/bemgarota",
+      "github": true
+    },
+    {
+      "name": "Pokedex",
+      "url": "https://github.com/Minf-afk/pokedex",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "Portal-Eduque",
+      "period": "2022 - até o momento",
+      "description": "Minha primeira experiência em desenvolvimento. Incrivel cada dia aprender mais e mais e tambem estar resolvendo problemas reais do dia a dia"
+    }
+  ]
+}
