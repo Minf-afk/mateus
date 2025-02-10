@@ -32,7 +32,7 @@ a:hover {
 .main::before,
 .main::after {
   content: '';
-  background-color: #1ac0aa;
+  background-color: #355854;
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
