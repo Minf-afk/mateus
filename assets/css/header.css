@@ -1,84 +1,95 @@
-.profile-container {
+.header {
   display: flex;
-  flex-direction: column; /* Alinha os itens em coluna */
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  position: relative;
 }
 
-.profile-photo {
-  width: 150px;
-  height: 180px;
-  border-radius: 80%;
-  margin-bottom: 1rem; 
+.header::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.title {
-  font-size: x-large;
-  font-weight: 700;
+.header .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.header .title {
+  font-family: 'Roboto';
   text-align: center;
-  margin: 0.5rem;
 }
 
 .information {
-  display: list-item;
-  list-style: none;
-  text-align: start;
-  align-content: center;
-  font-size: smaller;
-  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.information p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: .5rem;
+  font-size: 1.125rem;
 }
 
 .information p::before {
-  content: "";
+  content: '';
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: cover;
-  vertical-align: middle;
-  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: .5rem;
 }
 
-p.ciencias::before {
-  background-image: url(../icons/ciencias.png);
+.information .job::before {
+  background-image: url('../icons/ciencias.png');
 }
 
-p.email::before {
-  background-image: url(../icons/email.png);
+.information .location::before {
+  background-image: url('../icons/mapa.png');
 }
 
-p.mapa::before {
-  background-image: url(../icons/mapa.png);
+.information .email::before {
+  background-image: url('../icons/email.png');
 }
 
-p.telefone::before {
-  background-image: url(../icons/telefone.png);
-}@media only screen and (min-width: 768px) {
-  div.profile-container {
-    display: grid;
-    grid-template-areas:
-      "photo title"
-      "photo information";
-    grid-template-columns: auto 1fr;
-    grid-gap: 1rem;
+.information .phone::before {
+  background-image: url('../icons/telefone.png');
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+      display: grid;
+      grid-template-areas:
+          "photo title"
+          "photo information"
+      ;
   }
-  img.profile-photo {
-    grid-area: photo;
-    margin-bottom: 0;
-    width: 300px;
-    height: 280px;
-    align-content: center;
-    margin-top: 1rem;
+
+  .header .photo {
+      grid-area: photo;
+      margin: 0 auto;
   }
-  h1.title {
-    grid-area: title;
-    text-align: center;
-    margin-top: 5rem;
-    font-size: xx-large;
+
+  .header .title {
+      grid-area: title;
+      text-align: start;
+      max-width: 210px;
   }
-  div.information {
-    text-align:center;
-    grid-area: information;
-    margin-left: 0;
+
+  .header .information {
+      grid-area: information;
   }
 }
