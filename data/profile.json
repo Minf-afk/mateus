@@ -1,15 +1,19 @@
 {
-  "name": "Renan J Paula",
-  "photo": "https://avatars.githubusercontent.com/u/3266640?v=4",
-  "job": "Tech Lead no S3 Bank",
-  "location": "São Paulo - SP",
-  "phone": "(16) 98159-7656",
-  "email": "renanjohannsen@gmail.com",
+  "name": "Mateus de Santana Pereira",
+  "photo": "https://avatars.githubusercontent.com/u/188932672?v=4",
+  "job": "Computer Science Student",
+  "location": "Santos - SP",
+  "phone": "(13) 99800-6013",
+  "email": "msantana.inf@gmail.com",
   "skills": {
     "hardSkills": [
       {
         "name": "Nodejs",
         "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+      },
+      {
+        "name": "Java",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
       },
       {
         "name": "Angular",
@@ -39,25 +43,36 @@
   "languages": [
     "Português BR",
     "Inglês (intermediário)",
-    "Espanhol (intermediário)"
+    "Espanhol (intermediário)",
+    "Italiano (iniciante)"
   ],
   "portfolio": [
     {
-      "name": "Site de Roupas | Femininas",
-      "url": "https://github.com/Minf-afk/bemgarota",
+      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
+      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
       "github": true
     },
     {
-      "name": "Pokedex",
-      "url": "https://github.com/Minf-afk/pokedex",
+      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
       "github": true
     }
   ],
   "professionalExperience": [
     {
-      "name": "Portal-Eduque",
+      "name": "Arquiteto de software / S3 BANK",
       "period": "2022 - até o momento",
-      "description": "Minha primeira experiência em desenvolvimento. Incrivel cada dia aprender mais e mais e tambem estar resolvendo problemas reais do dia a dia"
+      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+    },
+    {
+      "name": "Software Engineering Lead / DIO",
+      "period": "2021 - 2022",
+      "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas vidas."
+    },
+    {
+      "name": "CEO / Brain Machine",
+      "period": "2016 - 2021",
+      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo."
     }
   ]
 }
